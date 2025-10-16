@@ -1,0 +1,114 @@
+
+
+ <!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Monument Structure Detection - Login</title>
+  <link rel="stylesheet" href="styles.css">
+  <style>
+    body {
+      margin: 0;
+      font-family: Arial, sans-serif;
+      background: url("img1.png") no-repeat center center/cover; /* changed to img1.jpg */
+      min-height: 100vh;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+    }
+    .auth-container {
+      background: rgba(255, 255, 255, 0.9);
+      padding: 30px;
+      border-radius: 12px;
+      box-shadow: 0 4px 15px rgba(0,0,0,0.2);
+      width: 350px;
+      text-align: center;
+    }
+    h1 {
+      margin-bottom: 20px;
+      color: #333;
+    }
+    form {
+      display: flex;
+      flex-direction: column;
+      gap: 12px;
+    }
+    input {
+      padding: 10px;
+      border-radius: 6px;
+      border: 1px solid #ccc;
+    }
+    button {
+      background: #ff9800;
+      color: #fff;
+      border: none;
+      padding: 10px;
+      border-radius: 6px;
+      cursor: pointer;
+      font-size: 1rem;
+    }
+    button:hover {
+      background: #e68900;
+    }
+    a {
+      color: #ff9800;
+      text-decoration: none;
+      font-size: 0.9rem;
+    }
+    a:hover { text-decoration: underline; }
+    .error {
+      color: red;
+      font-size: 0.85rem;
+      margin-top: 5px;
+    }
+    footer {
+      margin-top: 20px;
+      text-align: center;
+      color: #fff;
+      font-size: 0.9rem;
+      position: absolute;
+      bottom: 10px;
+    }
+  </style>
+</head>
+  <body>
+  <div class="auth-container">
+    <h1>Monument Structure Detection</h1>
+    <p class="catchy-text">
+      Welcome! Join our community of explorers, archaeologists, and historians. Sign up or log in to start revealing the hidden stories and architectural marvels of ancient monuments. Your uploads help unlock new insights for research and discovery!
+    </p>
+    <div id="login-form">
+      <h2>Login</h2>
+  <form id="loginForm">
+        <input type="email" id="login-email" placeholder="Email" required>
+        <input type="password" id="login-password" placeholder="Password" required>
+        <button type="submit">Login</button>
+      </form>
+  <p>Don't have an account? <button id="show-signup" type="button" style="background:none;border:none;color:#ff9800;cursor:pointer;font-size:0.9rem;">Sign up</button></p>
+      <div id="login-error" class="error"></div>
+    </div>
+    <div id="signup-form" style="display:none;">
+      <h2>Sign Up</h2>
+  <form id="signupForm">
+        <input type="text" id="signup-name" placeholder="Full Name" required>
+        <input type="email" id="signup-email" placeholder="Email" required>
+        <input type="password" id="signup-password" placeholder="Password" required>
+        <input type="password" id="signup-confirm" placeholder="Confirm Password" required>
+        <button type="submit">Sign Up</button>
+      </form>
+  <p>Already have an account? <button id="show-login" type="button" style="background:none;border:none;color:#ff9800;cursor:pointer;font-size:0.9rem;">Login</button></p>
+      <div id="signup-error" class="error"></div>
+    </div>
+  </div>
+  <footer style="background:rgba(255,255,255,0.85);padding:12px 0;margin-top:30px;text-align:center;border-top:1px solid #eee;">
+    <div style="margin-bottom:6px;">
+      <a href="about.html" style="color:#ff9800;margin:0 10px;text-decoration:none;">About</a>
+      <a href="contact.html" style="color:#ff9800;margin:0 10px;text-decoration:none;">Contact</a>
+      <a href="privacypolicy.html" style="color:#ff9800;margin:0 10px;text-decoration:none;">Privacy Policy</a>
+    </div>
+    <span style="color:#888;font-size:0.95rem;">© 2025 Temple Vision | All Rights Reserved</span>
+  </footer>
+  <script src="main.js"></script>
+</body>
+</html>
