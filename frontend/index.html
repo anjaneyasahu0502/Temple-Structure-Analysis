@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Temple Structure Detection</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="dashboard-container">
+        <nav class="dashboard-nav">
+            <div class="nav-left">
+                <span class="nav-logo">TempleVision</span>
+                <span class="nav-title">Monument Structure Detection Dashboard</span>
+            </div>
+            <div class="nav-right">
+                <span id="user-greeting">Welcome,</span>
+                <button id="signout-btn" class="nav-signout">Sign Out</button>
+            </div>
+        </nav>
+        <div class="dashboard-main">
+            <div class="dashboard-intro">
+                <h2>Discover Monument Secrets</h2>
+                <p>
+                    Unlock the secrets of ancient monuments! Our AI-powered platform helps archaeologists, historians, and enthusiasts discover hidden details in temple and monument images or videos. Upload your visuals and let our smart detection reveal architectural features, shapes, and structures—making research and exploration easier and more exciting than ever.
+                </p>
+            </div>
+            <div class="dashboard-cards">
+                <div class="dashboard-card">
+                    <h3>Image Analysis</h3>
+                    <p>Share a monument or temple image to uncover its architectural wonders. Perfect for research, discovery, or pure curiosity!</p>
+                    <form id="imageForm">
+                        <input type="file" id="imageInput" name="image" accept="image/*" required>
+                        <button type="submit">Detect Image</button>
+                    </form>
+                </div>
+                <div class="dashboard-card">
+                    <h3>Video Analysis</h3>
+                    <p>Have a walkthrough or documentary? Upload your video and let our system analyze every frame for historical insights and structural details!</p>
+                    <form id="videoForm">
+                        <input type="file" id="videoInput" name="video" accept="video/*" required>
+                        <button type="submit">Detect Video</button>
+                    </form>
+                </div>
+            </div>
+            <div id="result" class="dashboard-result"></div>
+        </div>
+        <footer class="dashboard-footer">
+            <a href="about.html">About</a> | <a href="contact.html">Contact</a> | <a href="privacypolicy.html">Privacy Policy</a>
+            <br>
+            <span>© 2025 Temple Vision | All Rights Reserved</span>
+        </footer>
+    </div>
+    <script src="main.js"></script>
+</body>
+</html>

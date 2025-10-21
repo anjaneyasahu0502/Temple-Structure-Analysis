@@ -1,0 +1,7 @@
+__pycache__/
+.env
+node_modules/
+.DS_Store
+temple_analysis_results.json
+yolov8n-seg.pt
+yolov8n.pt
